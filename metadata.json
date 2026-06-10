@@ -1,5 +1,8 @@
 {
-  "name": "Online Python Visualizer",
-  "description": "An advanced web-based tool to instantly visualize Python code. It runs Matplotlib, Pandas, Seaborn, Plotly, Scikit-learn, NetworkX, and more directly in your browser using Pyodide, providing immediate visual feedback without any server-side execution. 100% free and client-side.",
-  "requestFramePermissions": []
+  "name": "Portofolio Kemal Avicenna",
+  "description": "Portofolio Kemal Avicenna Faza yang berisi berbagai proyek, aplikasi, dan tulisan menarik.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

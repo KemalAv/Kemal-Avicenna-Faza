@@ -1,69 +1,13 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Python Visualizer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
-    <style>
-      body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      /* Simple scrollbar styling for webkit browsers */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #e0e0e0;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #a0a0a0;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #808080;
-      }
-      /* Pandas DataFrame 2009 theme styling */
-      .dataframe {
-        color: #333;
-        border-collapse: collapse;
-        width: 100%;
-        border: 1px solid #999;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-      }
-      .dataframe th {
-        background-color: #d0d0d0;
-        color: #000;
-        padding: 8px 10px;
-        text-align: left;
-        border: 1px solid #999;
-        font-weight: bold;
-      }
-      .dataframe td {
-        padding: 6px 10px;
-        border: 1px solid #bDBDBD;
-      }
-      .dataframe tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
-    </style>
-    <script type="importmap">
-      {
-        "imports": {
-          "react": "https://aistudiocdn.com/react@^19.2.0",
-          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-          "react/": "https://aistudiocdn.com/react@^19.2.0/",
-          "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
-        }
-      }
-    </script>
-  <link rel="stylesheet" href="/index.css">
-</head>
-  <body class="bg-gray-200">
+    <title>My Google AI Studio App</title>
+  </head>
+  <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+

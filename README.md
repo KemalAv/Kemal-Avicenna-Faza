@@ -1,11 +1,20 @@
-# Online-Python-Visualizer
-✨ A web-based tool to instantly visualize Python code, running Matplotlib, Pandas, Seaborn, Plotly, Scikit-learn, NetworkX, and more in-browser via Pyodide. 100% free,, deployed on Vercel for fast, free access.  
-[🌐 Live App](https://online-python-visualizer.vercel.app/)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
----
+# Run and deploy your AI Studio app
 
-## 🚀 Deployment
+This contains everything you need to run your app locally.
 
-Deployed **for free on Vercel**, auto-updates with every `git push` to `main`.
+View your app in AI Studio: https://ai.studio/apps/302cc62d-ae84-47ab-8713-3f86d3b94f4e
 
----
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
