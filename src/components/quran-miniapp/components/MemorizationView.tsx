@@ -41,7 +41,7 @@ export const MemorizationView: React.FC<MemorizationViewProps> = ({
   const handlePrevWord = () => {
     if (visibleWordsCount > 0) {
       setVisibleWordsCount(prev => prev - 1);
-    } else if (currentAyahIdx > startIndex) {
+    } else if (currentAyahIdx > 0) {
       const prevIdx = currentAyahIdx - 1;
       const prevAyahWords = ayahs[prevIdx].text.split(' ');
       setCurrentAyahIdx(prevIdx);
@@ -50,7 +50,6 @@ export const MemorizationView: React.FC<MemorizationViewProps> = ({
   };
 
   const handleResetToStart = () => {
-    setCurrentAyahIdx(startIndex);
     setVisibleWordsCount(0);
   };
 
