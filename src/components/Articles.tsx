@@ -6,8 +6,13 @@
 import { motion } from 'motion/react';
 import { articles } from '../data';
 import { ArrowRight, BookOpen } from 'lucide-react';
+import { BlogPost } from '../types';
 
-export default function Articles() {
+interface ArticlesProps {
+  onArticleClick?: (article: BlogPost) => void;
+}
+
+export default function Articles({ onArticleClick }: ArticlesProps) {
   return (
     <section id="articles" className="py-24 px-4 bg-white/[0.2] border-y border-slate-100">
       <div className="max-w-7xl mx-auto">
@@ -34,11 +39,21 @@ export default function Articles() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group glass-white p-10 rounded-sm tech-border hover:bg-white transition-all shadow-sm border-blue-100/50"
+              onClick={() => onArticleClick?.(article)}
+              className="group glass-white p-10 rounded-sm tech-border hover:bg-white transition-all shadow-sm border-blue-100/50 flex flex-col cursor-pointer"
             >
+              {article.image && (
+                <div className="mb-8 aspect-video overflow-hidden rounded-sm tech-border border-slate-100 relative group-hover:border-blue-200 transition-colors">
+                  <img 
+                    src={article.image} 
+                    alt={article.title} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                  />
+                  <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div>
+              )}
               <div className="mb-8">
-                <span className="text-[10px] font-black text-blue-600 uppercase tracking-[0.3em] font-tech">{article.date}</span>
-                <h3 className="text-2xl font-bold text-slate-900 mt-4 line-clamp-2 group-hover:text-blue-600 transition-colors leading-tight">
+                <h3 className="text-2xl font-bold text-slate-900 line-clamp-2 group-hover:text-blue-600 transition-colors leading-tight">
                   {article.title}
                 </h3>
               </div>

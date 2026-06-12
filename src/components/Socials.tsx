@@ -17,7 +17,7 @@ const IconMap: Record<string, any> = {
 
 export default function Socials() {
   return (
-    <section className="py-24 px-4 bg-white/[0.2]">
+    <section id="socials" className="py-24 px-4 bg-white/[0.2]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20 space-y-6">
           <h2 className="font-display text-4xl font-black text-slate-900 uppercase tracking-[0.3em]">Media Sosial</h2>

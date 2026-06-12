@@ -48,7 +48,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({ onSelectMode, t, onBack }) =
 
       <div className="text-center">
         <Button variant="outline" onClick={onBack} icon={<Icons.Prev size={18} />}>
-          {t.back} ke Portofolio
+          {t.back} ke Kumpulan Karya
         </Button>
       </div>
     </div>

@@ -9,9 +9,9 @@ import { profile } from '../data';
 export default function Header() {
   const navItems = [
     { name: 'Profil', href: '#profile' },
-    { name: 'Portofolio', href: '#works' },
-    { name: 'Aplikasi', href: '#apps' },
-    { name: 'Target', href: '#dreams' },
+    { name: 'Kumpulan Karya', href: '#works' },
+    { name: 'Kumpulan Aplikasi', href: '#apps' },
+    { name: 'Media Sosial', href: '#socials' },
     { name: 'Artikel', href: '#articles' },
   ];
 
@@ -43,10 +43,6 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <div className="hidden lg:flex flex-col items-end">
-            <span className="text-[10px] font-mono text-blue-600 uppercase tracking-tighter">System Status</span>
-            <span className="text-[10px] font-mono text-slate-400">OPERATIONAL // L7</span>
-          </div>
           <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse shadow-glow-blue" />
         </div>
       </div>
